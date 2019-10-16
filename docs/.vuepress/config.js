@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: ['@vuepress/back-to-top'],
   themeConfig: {
+    smoothScroll: true,
 	  // 你的GitHub仓库，请正确填写
     repo: 'https://github.com/wuhuama/blog',
     // 自定义仓库链接文字。
@@ -24,6 +25,7 @@ module.exports = {
         { text: '主页', link: '/' },
         { text: '文章', link: '/blog/FirstBlog.md' }
     ],
+    sidebarDepth: 2,
     sidebar: [
       '/',
       '/blog/FirstBlog',
