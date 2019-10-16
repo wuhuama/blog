@@ -10,10 +10,10 @@ echo "# 111" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/wuhuama/111.git
+git remote add origin https://github.com/wuhuama/blog.git
 git push -u origin master
 …or push an existing repository from the command line
-git remote add origin https://github.com/wuhuama/111.git
+git remote add origin https://github.com/wuhuama/blog.git
 git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
@@ -23,11 +23,11 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 查看分支：git branch  
 查看远程所有分支：git branch -r  
 查看本地和远程所有分支：git branch -a  
-创建分支：git branch  
-切换分支：git checkout  
-创建并切换分支：git checkout -b  
-合并某分支到当前分支：git merge  
-把分支推送到远程：git push origin  
+创建分支：git branch [name]
+切换分支：git checkout [name]
+创建并切换分支：git checkout -b [name]
+合并某分支到当前分支：git merge [name]
+把分支推送到远程：git push origin [name]
 删除本地分支：git branch (-d | -D)  
 删除远程分支：git push origin -d  
 分支重命名：git branch (-m | -M)  
