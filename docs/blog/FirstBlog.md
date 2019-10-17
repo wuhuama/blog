@@ -171,12 +171,15 @@ git push //更新本地仓库至最新改动
 git merge feature_x //合并feature_x分支到当前分支
 //可能会出现冲突 conflicts ,需要人肉修改冲突的地方
 //改完之后，再提交
-git add <修改的文件名>
-git diff <sourch_branch> <target_branch> // 先查看当前分支与所提交到的分支的差异
+git add 修改的文件名
+git diff sourch_branch target_branch // 先查看当前分支与所提交到的分支的差异
 
 // 项目发布，打tag
 git tag 1.0.0 1b2e1d63ff // 1b2e1d63ff的意思是git log中产生的提交id前10位字符，
 
+// 丢弃本地更改
+git fetch origin
+git reset --hard origin/master
 
 ```
 

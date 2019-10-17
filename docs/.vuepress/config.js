@@ -14,7 +14,7 @@ module.exports = {
       }
     }
   },
-  plugins: ['@vuepress/back-to-top'],
+  plugins: ['@vuepress/back-to-top', '@vuepress/nprogress'],
   themeConfig: {
     smoothScroll: true,
 	  // 你的GitHub仓库，请正确填写
